@@ -1,0 +1,102 @@
+body{
+    background-image: url(../img/BG.jpg);
+    background-size: cover;
+    height: 100vh;
+}
+
+.game-box{
+    position: fixed; /* or absolute */
+    top: 50%;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    height: 70vh;
+    float: left;
+    text-align: center;
+}
+
+.player-1{
+    width: 50%;
+    height: 100%;
+    background-color: rgba(165, 42, 42, 0.85);
+    float: left;
+    border-radius: 10px;
+    box-shadow: rgb(129, 196, 129) 1px 1px 10px;
+}
+
+.player-2{
+    width: 50%;
+    height: 100%;
+    background-color: rgba(0, 128, 0, 0.85);
+    float: left;
+    border-radius: 10px;
+    box-shadow: honeydew 1px 1px 10px;
+}
+
+.dice{
+    margin-top: 10%;
+    width: 25%;
+    border-radius: 10px;
+}
+
+.name{
+    margin-top: 10%;
+    letter-spacing: 5px;
+    font-size: 30px;
+}
+
+.esp{
+    margin-right: 10px;
+}
+
+.btn-new-pos{
+    position: absolute;
+    right: 50%;
+    transform: translate(50%);
+    top: 5%;
+}
+
+.btn-roll-pos{
+    position: absolute;
+    right: 50%;
+    transform: translate(50%);
+    bottom: 15%;
+
+}
+
+.default{
+    display: none;
+}
+
+
+
+.player-1-win .winner-img{
+    display: inline-block !important;
+    position: absolute;
+    width: 20%;
+    left: 0;
+}
+
+.player-1-win .loser-img{
+    display: inline-block !important;
+    position: absolute;
+    width: 20%;
+    right: 0;
+
+}
+
+.player-1-lose .loser-img{
+    display: inline-block !important;
+    position: absolute;
+    width: 20%;
+    left: 0;
+}
+
+.player-1-lose .winner-img{
+    display: inline-block !important;
+    position: absolute;
+    width: 20%;
+    right: 0;
+
+}
